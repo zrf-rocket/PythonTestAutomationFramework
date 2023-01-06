@@ -1,10 +1,13 @@
 #Python pytest framework
 
 ## 介绍
-适用于多种软件测试的Pytest，是另一个Python类型的自动化测试框架。凭借着其开源和易学的特点，该工具经常被QA(质量分析)团队、开发团队、个人团队、以及各种开源项目所使用。鉴于Pytest具有“断言重写(assert rewriting)”之类的实用功能，许多大型互联网应用，如Dropbox和Mozilla，都已经从下面将要提到的unittest(Pyunit)切换到了Pytest之上。
-pytest是python的一种单元测试框架，与python自带的unittest测试框架类似，但是比unittest框架使用起来更简洁，效率更高。
+适用于多种软件测试的Pytest，是另一个Python类型的自动化测试框架。凭借着其开源和易学的特点，该工具经常被QA(质量分析)团队、开发团队、个人团队、以及各种开源项目所使用。鉴于Pytest具有“断言重写(assert rewriting)”之类的实用功能，许多大型互联网应用，如Dropbox和Mozilla，都已经从下面将要提到的unittest(Pyunit)切换到了Pytest之上。  
+pytest是python的一种单元测试框架，与python自带的unittest测试框架类似，但是比unittest框架使用起来更简洁，效率更高。  
+Python第三方单元测试库，通用性更广。  
 
-参见：[官方文档](https://pytest.org/en/latest/)
+参见
+> [官方文档](https://pytest.org/en/latest/)  
+> [Pytest使用手册](https://learning-pytest.readthedocs.io/zh/latest/)
 
 ## 特点
 ```

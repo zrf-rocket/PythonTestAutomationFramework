@@ -4,8 +4,12 @@
 1. UnitTest/PyUnit一种标准化的针对单元测试的Python类自动化测试框架。基类TestCase提供了各种断言方法、以及所有清理和设置的例程。因此，TestCase子类中的每一种方法都是以“test”作为名词前缀，以标识它们能够被作为测试用例所运行。用户可以使用load方法和TestSuite类来分组、并加载各种测试。
 2. 可以通过联合使用，来构建自定义的测试运行器。正如我们使用Junit去测试Selenium那样，UnitTest也会用到UnitTest-sml-reporting、并能生成各种XML类型的报告。
 3. 是python内置的标准类库，它的API跟java的Junit、.net的NUnit、C++的CppUnit很相似，通过继承unittest.TestCase来创建一个测试用例。
+4. unittest单元测试框架是受到 JUnit 的启发，与其他语言中的主流单元测试框架有着相似的风格。 
+5. 其支持测试自动化，配置共享和关机代码测试。支持将测试样例聚合到测试集中，并将测试与报告框架独立。
 
-参见：[官方文档](https://docs.python.org/3.11/library/unittest.html)
+参见：
+> [官方文档](https://docs.python.org/3.11/library/unittest.html)  
+> [Unittest中文手册](https://docs.python.org/zh-cn/3/library/unittest.html#module-unittest)
 
 ## 特点
     1. 使用断言判断返回布尔值来判断期望值和实际值的差异。
