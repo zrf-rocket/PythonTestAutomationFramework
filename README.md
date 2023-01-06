@@ -2,8 +2,8 @@
 
 ## 介绍
 
-· 自动化测试框架，即是应用于自动化测试所用的框架。自动化测试框架要么是提供可重用的基础自动化测试模块，如：selenium、watir等，它们主要提供最基础的自动化测试功能，比如打开一个程序，模拟鼠标和键盘来点击或操作被测试对象，最后验证被测对象的属性以判断程序的正确性；要么是可以提供自动化测试执行和管理功能的架构模块，如：Phoenix Framework，robot，STAF等，它们本身不提供基础的自动化测试支持，只是用于组织、管理和执行那些独立的自动化测试用例，测试完成后统计测试结果，通常这类框架一般都会集成一个基础自动化测试模块，如：robot框架就可以集成selenium框架，Phoenix Framework集成的也是selenium框架；  
-· 基于Python3.11的自动化单元测试框架。只需要进行一些适用性和效率参数的调整，这些自动化测试框架就能够开箱即用，大大节省了开发时间。而且由于这些框架被广泛使用，他们具有很好的健壮性，并且具有广泛多样的用例集和技术来轻易发现微小的缺陷。
+* 自动化测试框架，即是应用于自动化测试所用的框架。自动化测试框架要么是提供可重用的基础自动化测试模块，如：selenium、watir等，它们主要提供最基础的自动化测试功能，比如打开一个程序，模拟鼠标和键盘来点击或操作被测试对象，最后验证被测对象的属性以判断程序的正确性；要么是可以提供自动化测试执行和管理功能的架构模块，如：Phoenix Framework，robot，STAF等，它们本身不提供基础的自动化测试支持，只是用于组织、管理和执行那些独立的自动化测试用例，测试完成后统计测试结果，通常这类框架一般都会集成一个基础自动化测试模块，如：robot框架就可以集成selenium框架，Phoenix Framework集成的也是selenium框架；  
+* 基于Python3.11的自动化单元测试框架。只需要进行一些适用性和效率参数的调整，这些自动化测试框架就能够开箱即用，大大节省了开发时间。而且由于这些框架被广泛使用，他们具有很好的健壮性，并且具有广泛多样的用例集和技术来轻易发现微小的缺陷。
 
 ## 什么是框架
 
@@ -19,6 +19,15 @@
 ## 安装教程
 
 Python 3.11
+pip install -r requirements.txt
+
+## 单元测试上给对象打补丁
+
+## 单元测试中测试异常情况
+
+## 基准测试
+
+想知道程序在哪里花费的时间，并进行计时测量。
 
 ## Python3.11 自动化测试框架
 
@@ -56,17 +65,19 @@ Pytest、Robot Framework和UnitTest主要用于功能与单元测试，Lettuce�
 
 *
 
-8. [selenium](selenium_framework/README.md)
-
-9. [tox](tox_framework/README.md)
+9. [selenium](selenium_framework/README.md)
 
 *
 
-10. [Unittest2](unittest2_framework/README.md)
+10. [tox](tox_framework/README.md)
 
 *
 
-11. [Unittest](unittest_framework/README.md)
+11. [Unittest2](unittest2_framework/README.md)
+
+*
+
+12. [Unittest](unittest_framework/README.md)
 
 ## 其他工具
 
