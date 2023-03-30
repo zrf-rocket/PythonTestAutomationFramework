@@ -29,8 +29,49 @@ Python 3.11
 pip install -r requirements.txt
 
 ## 单元测试上给对象打补丁
+给对象打补丁指的是在单元测试中使用 mock 或 stub 对象来替代实际对象的某些行为或属性，以便于测试其它部分的代码。
+
+比如，在一个单元测试中，如果某个对象的某个属性是一个时间戳，这个属性值在每次运行时都会改变，导致测试结果难以预测。这时可以使用 patch 库中的 patch 函数来打补丁，替换掉这个属性的返回值，使测试更稳定可靠。
+
+示例代码：
+
+```python
+import unittest
+from unittest.mock import patch
+
+class TestMyClass(unittest.TestCase):
+    @patch('my_module.MyClass.my_method')
+    def test_something(self, mock_method):
+        mock_method.return_value = "mocked_value"
+        
+        obj = my_module.MyClass()
+        result = obj.my_method()
+        
+        self.assertEqual(result, "mocked_value")
+```
+
+通过使用 patch 函数和 MagicMock 对象来模拟 MyClass 类中的 my_method 方法，使其返回一个预定值。在测试代码中，我们首先导入 patch 函数和 MagicMock 类，然后在 test_something 方法中使用 patch 函数来打补丁，指定要模拟的目标为 my_module.MyClass.my_method，然后在方法里实例化 MyClass 对象，并调用 my_method 方法。此时，由于已经打了补丁，my_method 方法将返回我们指定的预定值，而不是本来的行为。最后，使用 assertEqual 断言来确认测试结果是否符合预期。
 
 ## 单元测试中测试异常情况
+单元测试中测试异常情况非常重要，因为它确保代码可以处理各种不同的输入情况，并且能够具有良好的错误处理和回复机制。以下是一些测试异常情况的技巧：
+
+1.考虑所有可能的异常情况：在测试中，确保涉及代码的每个路径都覆盖到相关异常情况。这些可能包括无效的参数、未处理异常、系统资源耗尽等等。
+
+2.测试代码逻辑：测试是否有异常情况会导致代码逻辑不正确。在这种情况下，需要编写测试来检查代码是否接受预期的异常条件和对该条件的响应是否是正确的。
+
+3.断言异常：使用断言来确保代码在遇到异常时能够产生预期结果。例如，可以断言特定类型的异常被抛出，或者代码是否正确地处理了异常。
+
+4.测试异常消息：测试异常消息是否明确和有用，以便开发人员易于诊断和修复错误。
+
+有些代码可能会抛出异常，在测试过程中，我们需要模拟这种异常情况来确保代码的健壮性。例如，在 Python 中，可以使用 assertRaises 方法来测试代码是否抛出了预期的异常。
+```python
+def test_my_function_with_exception():
+    with pytest.raises(ValueError):
+        my_function_with_exception()
+```
+使用 pytest 的 assertRaises 方法来测试 my_function_with_exception() 是否会抛出 ValueError 异常。如果抛出了该异常，测试就通过了；否则就会失败。
+
+总之，测试异常情况可以帮助开发人员减少代码中的漏洞和错误，并大大提高系统的质量和可靠性。
 
 ## 基准测试
 
