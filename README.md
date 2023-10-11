@@ -3,16 +3,24 @@
 **【关于我们】**
 
 * [Articulate v1.0](https://mp.weixin.qq.com/s/0yqGBPbOI6QxHqK17WxU8Q)
-* [Articulate v2.0 待定.......]()
+* [Articulate v2.0](https://mp.weixin.qq.com/s/V5Axn-ZWi22ubh5Jiocb9g)
 
 [![](https://img.shields.io/badge/GitHub-zrf--rocket-blue?logo=gitpod)](https://github.com/zrf-rocket)
 [![](https://img.shields.io/badge/Gitee-SteveRocket-pink)](https://gitee.com/SteveRocket/)
 ![CTO Plus](https://img.shields.io/badge/微信公众号：CTO%20Plus-8A2BE2) 🥰
 
-<img src="./static/wechat.png" style="width:500px">
+## Contact
 
+![微信公众号](./static/wechat.png)  
+**< 微信公众号 >**
 
-**【代码工程系列】**
+![QQ技术交流群](./static/qq_link.png)  
+**< QQ技术交流群 >**
+
+![联系作者](./static/wechat.jpg)  
+**< 联系作者 >**
+
+## **【代码工程系列】**
 
 * [Python和Go的设计模式](https://github.com/zrf-rocket/DesignPattern)
     * GitHub：https://github.com/zrf-rocket/DesignPattern
@@ -83,6 +91,7 @@
 * [AI图像识别-智能缺陷检测系统]()
     * [基于AI图像识别的工业缺陷检测应用系统（GPU&FPGA）](https://mp.weixin.qq.com/s/04qefQFg-Pg1Gcqq1vBLQQ)
     * [基于AI图像识别的智能缺陷检测系统，在钢铁行业的应用-技术方案](https://mp.weixin.qq.com/s/dSHbnuOwQZzE4CvPr1JYjg)
+
 
 
 # python_test_automation_framework
@@ -266,3 +275,9 @@ Unittest是Python标准库（内置）中的模块，可以进行单元测试、
 ## 其他框架
 
 Python其他开发框架参考：[Python常用开发框架Framework(WEB、测试、爬虫)总结](https://blog.csdn.net/zhouruifu2015/article/details/129855458)
+
+## 其他工具
+
+### [2to3](https://docs.python.org/3/library/2to3.html)
+
+在最新的Python版本Python3.12中已经被废弃。
